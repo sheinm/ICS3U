@@ -1,4 +1,7 @@
 package noriegaMestanza;
+
+import java.util.Scanner;
+
 /** Sum of Digits
  * This program finds the sum of the digits of a number given by the user
  * @author 324032952
@@ -6,6 +9,12 @@ package noriegaMestanza;
  */
 public class SumDigits {
 	  public static void main (String [] args){
+
+			Scanner scan = new Scanner(System.in);
+			System.out.println("Please enter a number");
+			int a = scan.nextInt();
+			System.out.println("Your total sum is " + totalSum(a));
+		
 		  
 	  }
 	  public static int totalSum (int num){
@@ -18,9 +27,9 @@ public class SumDigits {
 					  
 			 }while (num>0);
 		 
-				sum  = num ;
+			 
 				 
-				return totalSum; 
+				return sum; 
 	  }
 	  
 
