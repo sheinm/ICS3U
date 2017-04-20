@@ -12,7 +12,6 @@ public class largestNumbers {
 		for(int x = 0; x < inputs; x++){
 			noot[x] = scan.nextInt();
 		}
-		system
 		
 		System.out.println(largestNumber(noot));
 	  }
