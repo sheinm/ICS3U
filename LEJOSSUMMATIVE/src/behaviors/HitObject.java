@@ -24,16 +24,13 @@ public class HitObject implements Behavior {
 
 	public void action (){
 		suppressed = false;
-		Motor.A.forward ();
-		Motor.A.setSpeed (800);
-		Motor.C.setSpeed(800);
-		Motor.C.forward ();
-		
-		while (!suppressed)
-			Thread.yield();
-		Motor.A.stop();
-		Motor.C.stop(); 
-
+		while (!suppressed )
+			Motor.B.rotate(100);
+			Motor.B.forward();
+			Motor.B.setSpeed(725);
+	
+		Motor.A.backward();
+		Motor.C.backward();
 }
 
 }
