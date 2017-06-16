@@ -24,6 +24,7 @@ public class SenseCup implements Behavior {
 	private boolean suppressed = false;
 
 	@Override
+	// takes control when distance is less than 24 
 	public boolean takeControl() {
 
 		if (ultra.getDistance() < 24    ){
@@ -41,16 +42,18 @@ public class SenseCup implements Behavior {
 	public void suppress() {
 		suppressed = true; 
 	}
-
+	/**
+	 * This method rotates t
+	 */
 	@Override
 	public void action () {
 		suppressed = false;
-		Motor.A.stop();
-		Motor.C.stop();
+			Motor.A.stop();
+			Motor.C.stop();
 		
-		Motor.A.rotate(60);
-		Motor.C.rotate(60);
-		Motor.B.rotate(-110);
+		Motor.A.rotate(60, true);
+		Motor.C.rotate(60, true);
+		Motor.B.rotate(-110 );
 		Motor.B.rotate(100);
 	
 		

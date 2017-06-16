@@ -1,5 +1,8 @@
 package behaviors;
 
+/**
+ * This methid ends the program
+ */
 import lejos.robotics.subsumption.Behavior;
 import lejos.nxt.Button;
 import lejos.nxt.Motor; 
