@@ -4,7 +4,7 @@ import lejos.nxt.Motor;
 import lejos.robotics.subsumption.Behavior;
 public class RunForward implements Behavior {
 	/**
-	 * This program is to move forward
+	 * This program is to move forward, lowest priority 
 	 * @author	Sheila Noriega
 	 * Due June 15th 2017
 	 */

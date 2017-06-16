@@ -26,7 +26,7 @@ public class SenseCup implements Behavior {
 	@Override
 	public boolean takeControl() {
 
-		if (ultra.getDistance() < 15){
+		if (ultra.getDistance() < 24    ){
 			return true;
 		}
 
@@ -48,8 +48,10 @@ public class SenseCup implements Behavior {
 		Motor.A.stop();
 		Motor.C.stop();
 		
-		Motor.B.rotate(-90);
-		Motor.B.rotate(90);
+		Motor.A.rotate(60);
+		Motor.C.rotate(60);
+		Motor.B.rotate(-110);
+		Motor.B.rotate(100);
 	
 		
 //		while(!(light.getLightValue() < 40)){

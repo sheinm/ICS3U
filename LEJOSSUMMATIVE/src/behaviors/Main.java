@@ -8,7 +8,11 @@ import lejos.nxt.UltrasonicSensor;
 import lejos.robotics.subsumption.Arbitrator;
 import lejos.robotics.subsumption.Behavior;
   
-
+/**
+ * This program is the declaration of behaviors and arbitrator
+ * @author	Sheila Noriega
+ * Due June 15th 2017
+ */ 
 public class Main {
 	
 public static void main(String[] args) {	
