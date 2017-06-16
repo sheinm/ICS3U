@@ -8,21 +8,18 @@ public class endProgram implements Behavior {
 
 	@Override
 	public boolean takeControl() {
-		if(Button.ESCAPE.isDown()){
-			return true;
-		}
-		return false;
+		return Button.ESCAPE.isDown();
 	}
-
 	@Override
 	public void action() {
-	 
-		Motor.A.stop();
-		Motor.B.stop();
 		System.exit(0);
 	}
 
 	@Override
+	/**
+	 * This method suppress sends to the next behavior unless it is true, then sends to the action
+	 * This will end the program when the button is pressed
+	 */  
 	public void suppress() {
 	}
 
